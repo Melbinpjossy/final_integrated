@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hot Foodie Contact</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+	   <main class="container">
+       <h1 class="hidden">Hot Foodie</h1>
+        <header class="mainHeader">
+            <div id="topBar"></div>
+            <div class="logoHeader">
+                <img src="images/logo.png" id="logo" alt="Hot Foodie logo">  
+            </div>
+            <nav class="mainNav">
+             <h2 class="hidden">Main Navigation</h2>
+               <ul>
+             <li class="selected"><a href="index.html">HOME</a></li>
+            <li><a href="review.html">REVIEWS</a></li>
+            <li><a href="#">RECIPES</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            </nav>
+        </header>
+
+         <section id="mainContact"> 
+                    <h2>CONTACT US</h2>
+            <section id="contactArea">
+                <h2 class="hidden">Contact form</h2> 
+            <form id="contactForm" action="form.php" method="post">
+                    <label for="name">Name: (required)</label>
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your name">
+                    
+                    <label for="email">Email: (required)</label>
+                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+
+                    <label for="enquiry">Nature of Enquiry</label>
+                     <select id="enquiry" name="enquiries">
+                       <option value="reviews">reviews</option>
+                       <option value="recipes">recipes</option>
+                       <option value="other">other</option>
+                      </select>
+
+                      <br>
+                    
+                    <label for="comment">Comments: (required)</label>
+                    <textarea name="comments" id="comment" required cols="50" rows="8"></textarea>
+                    
+                    <label for="human">Enter Code Below: (required)</label>
+                    <input type="text" required id="human" size="30" placeholder="DstvK">
+                   
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+        </section>
+
+              <section id="form2">
+                <h3>Get in touch</h3>
+                <p id="contactText">If you have any questions, please feel free to contact us. Fill out the form on left side and select the nature of your enquiry to help us get a better understanding of your questions. We look forward to hearing from you and also providing answers to your questions.</p>    
+             </section>
+         </section>
+
+         <footer class="mainFooter">
+            <div class="logoFooter">
+            <nav class="footerNav">
+                <h2 class="hidden">Footer navigation</h2>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                    <li><a href="#">RECIPE</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            </div>
+
+              <div class="socialMedia">
+        <h2 class="hidden">Social Media</h2>
+        <ul id="iconNav">
+            <li id="facebook">
+              <a href="http://www.facebook.com">
+                <img src="images/facebook.png" alt="facebook">
+              </a>
+            </li>
+            <li id="twitter">
+              <a href="http://www.twitter.com">
+                <img src="images/twitter.png" alt="twitter">
+              </a>
+            </li>
+            <li id="google">
+              <a href="http://www.google.com">
+                <img src="images/google.png" alt="google plus">
+              </a>
+              <li id="linkedIn">
+              <a href="http://www.LinkedIn.com">
+                <img src="images/in.png" alt="LinkedIn">
+              </a>
+           </li>
+        </ul>
+         <section class="copyRight">
+          <small>&copy; Copyright 2018 Hot Foodie</small>
+        </section>
+      </div> 
+
+        </footer>
+<script src="js/main.js"></script>
+</main>    
+</body>
+</html>
